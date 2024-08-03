@@ -19,3 +19,22 @@ body {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+.placeholder-animated::placeholder {
+  animation: fadeInOut 3s ease-in-out infinite;
+  color: rgba(0, 0, 0, 0.5); /* Adjust color as needed */
+}

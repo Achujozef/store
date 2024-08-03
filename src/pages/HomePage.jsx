@@ -6,13 +6,15 @@ import CategoryList from '../components/CategoryList';
 import FeaturedProducts from '../components/FeaturedProducts';
 import SearchBar from '../components/SearchBar';
 const HomePage = () => (
-  <div>
+    <div className="relative">
     <TopNav />
     <Navbar />
-    {/* <SearchBar /> */}
+    <div className="pt-16">
     <BannerCarousel />
     <CategoryList />
     <FeaturedProducts />
+    <FeaturedProducts />
+      </div>
   </div>
 );
 

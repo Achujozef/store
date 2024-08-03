@@ -28,15 +28,15 @@
     { id: 6, name: 'Bakery', image: '/images/veg.png' }
 ];
   
-  export const featuredProducts = [
-    { id: 1, name: 'Apple', price: '₹100', rating: 4.5, image: '/images/fruits.jpg' },
-    { id: 2, name: 'Banana', price: '₹50', rating: 4.2, image: '/images/veg.png' },
-    { id: 3, name: 'Carrot', price: '₹30', rating: 4.0, image: 'https://via.placeholder.com/150?text=Carrot' },
-    { id: 4, name: 'Milk', price: '₹60', rating: 4.7, image: 'https://via.placeholder.com/150?text=Milk' },
-    { id: 1, name: 'Apple', price: '₹100', rating: 4.5, image: 'https://via.placeholder.com/150?text=Apple' },
-    { id: 2, name: 'Banana', price: '₹50', rating: 4.2, image: 'https://via.placeholder.com/150?text=Banana' },
-    { id: 3, name: 'Carrot', price: '₹30', rating: 4.0, image: 'https://via.placeholder.com/150?text=Carrot' },
-    { id: 4, name: 'Milk', price: '₹60', rating: 4.7, image: 'https://via.placeholder.com/150?text=Milk' }
+export const featuredProducts = [
+    { id: 1, name: 'Apple', brand: 'Brand A', quantity: '1 kg', mrp: '120', actualPrice: '100', image: '/images/fruits.jpg' },
+    { id: 2, name: 'Banana', brand: 'Brand B', quantity: '1 dozen', mrp: '60', actualPrice: '50', image: '/images/veg.png' },
+    { id: 3, name: 'Carrot', brand: 'Brand C', quantity: '500 g', mrp: '40', actualPrice: '30', image: 'https://via.placeholder.com/150?text=Carrot' },
+    { id: 4, name: 'Milk', brand: 'Brand D', quantity: '1 liter', mrp: '70', actualPrice: '60', image: 'https://via.placeholder.com/150?text=Milk' },
+    { id: 5, name: 'Apple', brand: 'Brand A', quantity: '1 kg', mrp: '120', actualPrice: '100', image: 'https://via.placeholder.com/150?text=Apple' },
+    { id: 6, name: 'Banana', brand: 'Brand B', quantity: '1 dozen', mrp: '60', actualPrice: '50', image: 'https://via.placeholder.com/150?text=Banana' },
+    { id: 7, name: 'Carrot', brand: 'Brand C', quantity: '500 g', mrp: '40', actualPrice: '30', image: 'https://via.placeholder.com/150?text=Carrot' },
+    { id: 8, name: 'Milk', brand: 'Brand D', quantity: '1 liter', mrp: '70', actualPrice: '60', image: 'https://via.placeholder.com/150?text=Milk' }
   ];
   
 
