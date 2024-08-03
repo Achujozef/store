@@ -5,6 +5,7 @@ import BannerCarousel from '../components/BannerCarousel';
 import CategoryList from '../components/CategoryList';
 import Products from '../components/Products';
 import TrendingProducts from '../components/TrendingProducts';
+import ClasicProducts from '../components/ClasicProducts';
 
 const HomePage = () => (
     <div className="">
@@ -16,6 +17,8 @@ const HomePage = () => (
     <Products />
     <Products />
     <TrendingProducts/>
+    <ClasicProducts/>
+    <ClasicProducts/>
   </div>
 );
 
