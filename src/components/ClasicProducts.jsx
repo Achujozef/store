@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { featuredProducts } from '../dummyData';
 import { FaPlus, FaMinus } from 'react-icons/fa';
-import { TrendingOfferIcon } from './OfferIcon'; // Import the TrendingOfferIcon component
+import { ClasicOfferIcon } from './OfferIcon'; // Import the TrendingOfferIcon component
 
 const ClasicProducts = () => {
   const [cart, setCart] = useState({}); 
@@ -24,11 +24,11 @@ const ClasicProducts = () => {
     <div className="py-4 px-4">
       <div className="flex overflow-x-auto space-x-2 mb-4 scrollbar-hidden">
         {featuredProducts.map(product => (
-          <div key={product.id} className="relative flex flex-col items-center min-w-max mx-1 border rounded-lg p-2 shadow-sm">
+          <div key={product.id} className="relative flex flex-col items-center min-w-max mx-1  rounded-lg p-2 ">
             {/* Offer Icon */}
             {product.offer > 0 && (
               <div className="absolute -top-4 -left-4 w-20 h-20 flex items-center justify-center">
-                <TrendingOfferIcon offer={product.offer} />
+                <ClasicOfferIcon offer={product.offer} />
               </div>
             )}
 

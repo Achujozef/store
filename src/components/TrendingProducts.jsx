@@ -32,7 +32,7 @@ const TrendingProducts = () => {
           {/* First Row */}
           <div className="flex space-x-2 mb-4">
             {firstRowProducts.map(product => (
-              <div key={product.id} className="relative flex flex-col items-center min-w-max mx-1 border rounded-lg p-2 shadow-sm overflow-hidden">
+              <div key={product.id} className="relative flex flex-col items-center min-w-max mx-1  rounded-lg p-2  overflow-hidden">
                 <img src={product.image} alt={product.name} className="w-24 h-24 object-cover rounded-lg" />
                 {product.offer > 0 && (
                   <div className="absolute -top-4 -left-4 w-20 h-20 flex items-center justify-center">
@@ -75,7 +75,7 @@ const TrendingProducts = () => {
           {/* Second Row */}
           <div className="flex space-x-2">
             {secondRowProducts.map(product => (
-              <div key={product.id} className="relative flex flex-col items-center min-w-max mx-1 border rounded-lg p-2 shadow-sm overflow-hidden">
+              <div key={product.id} className="relative flex flex-col items-center min-w-max mx-1  rounded-lg p-2  overflow-hidden">
                 <img src={product.image} alt={product.name} className="w-24 h-24 object-cover rounded-lg" />
                 {product.offer > 0 && (
                   <div className="absolute -top-4 -left-4 w-20 h-20 flex items-center justify-center">
