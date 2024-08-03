@@ -29,13 +29,13 @@
 ];
   
 export const featuredProducts = [
-    { id: 1, name: 'Apple', brand: 'Brand A', quantity: '1 kg', mrp: '120', actualPrice: '100', image: '/images/fruits.jpg' },
-    { id: 2, name: 'Banana', brand: 'Brand B', quantity: '1 dozen', mrp: '60', actualPrice: '50', image: '/images/veg.png' },
+    { id: 1, name: 'Apple', brand: 'Brand A', quantity: '1 kg', mrp: '120', actualPrice: '100', image: '/images/fruits.jpg', offer:"10", },
+    { id: 2, name: 'Banana', brand: 'Brand B', quantity: '1 dozen', mrp: '60', actualPrice: '50', image: '/images/veg.png' , offer:"30",},
     { id: 3, name: 'Carrot', brand: 'Brand C', quantity: '500 g', mrp: '40', actualPrice: '30', image: 'https://via.placeholder.com/150?text=Carrot' },
-    { id: 4, name: 'Milk', brand: 'Brand D', quantity: '1 liter', mrp: '70', actualPrice: '60', image: 'https://via.placeholder.com/150?text=Milk' },
+    { id: 4, name: 'Milk', brand: 'Brand D', quantity: '1 liter', mrp: '70', actualPrice: '60', image: 'https://via.placeholder.com/150?text=Milk' , offer:"30",},
     { id: 5, name: 'Apple', brand: 'Brand A', quantity: '1 kg', mrp: '120', actualPrice: '100', image: 'https://via.placeholder.com/150?text=Apple' },
-    { id: 6, name: 'Banana', brand: 'Brand B', quantity: '1 dozen', mrp: '60', actualPrice: '50', image: 'https://via.placeholder.com/150?text=Banana' },
-    { id: 7, name: 'Carrot', brand: 'Brand C', quantity: '500 g', mrp: '40', actualPrice: '30', image: 'https://via.placeholder.com/150?text=Carrot' },
+    { id: 6, name: 'Banana', brand: 'Brand B', quantity: '1 dozen', mrp: '60', actualPrice: '50', image: 'https://via.placeholder.com/150?text=Banana' , offer:"0",},
+    { id: 7, name: 'Carrot', brand: 'Brand C', quantity: '500 g', mrp: '40', actualPrice: '30', image: 'https://via.placeholder.com/150?text=Carrot', offer:"40", },
     { id: 8, name: 'Milk', brand: 'Brand D', quantity: '1 liter', mrp: '70', actualPrice: '60', image: 'https://via.placeholder.com/150?text=Milk' }
   ];
   

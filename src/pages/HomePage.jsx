@@ -3,18 +3,19 @@ import TopNav from '../components/TopNav';
 import Navbar from '../components/Navbar';
 import BannerCarousel from '../components/BannerCarousel';
 import CategoryList from '../components/CategoryList';
-import FeaturedProducts from '../components/FeaturedProducts';
-import SearchBar from '../components/SearchBar';
+import Products from '../components/Products';
+import TrendingProducts from '../components/TrendingProducts';
+
 const HomePage = () => (
-    <div className="relative">
+    <div className="">
     <TopNav />
     <Navbar />
-    <div className="pt-16">
+
     <BannerCarousel />
     <CategoryList />
-    <FeaturedProducts />
-    <FeaturedProducts />
-      </div>
+    <Products />
+    <Products />
+    <TrendingProducts/>
   </div>
 );
 
