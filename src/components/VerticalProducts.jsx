@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { featuredProducts } from '../dummyData';
 import { FaPlus, FaMinus } from 'react-icons/fa';
-import {OfferIcon} from './OfferIcon'
+import { ClasicOfferIcon } from './OfferIcon'; // Ensure this is the correct import
 
-const Products = () => {
+const VerticalProducts = () => {
   const [cart, setCart] = useState({}); 
 
   const handleAddClick = (id) => {
@@ -22,18 +22,18 @@ const Products = () => {
 
   return (
     <div className="py-4 px-4">
-      <div className="flex justify-between items-center mb-4">
-        <h2 className="text-xl font-semibold">Products</h2>
-        <button className="text-blue-600 hover:underline">View All</button>
-      </div>
-      <div className="flex overflow-x-auto space-x-2 mb-4 scrollbar-hidden">
+      <div className="grid grid-cols-2 gap-4">
         {featuredProducts.map(product => (
-          <div key={product.id} className="relative flex flex-col items-center min-w-max mx-1  rounded-lg p-2 ">
+          <div key={product.id} className="relative flex flex-col items-center min-w-max mx-1 rounded-lg p-2  border-gray-300">
             {/* Offer Icon */}
-            {product.offer > 0 && <OfferIcon offer={product.offer} />}
+            {product.offer > 0 && (
+              <div className="absolute -top-4 -left-4 w-20 h-20 flex items-center justify-center">
+                <ClasicOfferIcon offer={product.offer} />
+              </div>
+            )}
 
-            <img src={product.image} alt={product.name} className="w-24 h-24 object-cover rounded-lg" />
-            <h3 className="mt-2 text-base">{product.name}</h3>
+            <img src={product.image} alt={product.name} className="w-full h-24 object-cover rounded-lg" />
+            <h3 className="mt-2 text-base font-semibold">{product.name}</h3>
             <p className="text-xs text-gray-600">{product.brand}</p>
             <p className="text-xs text-gray-600">{product.quantity}</p>
             <div className="flex justify-between items-end w-full mt-1">
@@ -69,4 +69,4 @@ const Products = () => {
   );
 };
 
-export default Products;
+export default VerticalProducts;

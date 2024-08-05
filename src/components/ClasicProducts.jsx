@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { featuredProducts } from '../dummyData';
 import { FaPlus, FaMinus } from 'react-icons/fa';
-import { ClasicOfferIcon } from './OfferIcon'; // Import the TrendingOfferIcon component
+import { ClasicOfferIcon } from './OfferIcon'; // Import the ClasicOfferIcon component
 
 const ClasicProducts = () => {
-  const [cart, setCart] = useState({}); 
+  const [cart, setCart] = useState({});
 
   const handleAddClick = (id) => {
     setCart((prevCart) => ({
@@ -22,9 +22,13 @@ const ClasicProducts = () => {
 
   return (
     <div className="py-4 px-4">
+      <div className="flex justify-between items-center mb-4">
+        <h2 className="text-xl font-semibold">Classic Products</h2>
+        <button className="text-blue-600 hover:underline">View All</button>
+      </div>
       <div className="flex overflow-x-auto space-x-2 mb-4 scrollbar-hidden">
         {featuredProducts.map(product => (
-          <div key={product.id} className="relative flex flex-col items-center min-w-max mx-1  rounded-lg p-2 ">
+          <div key={product.id} className="relative flex flex-col items-center min-w-max mx-1 rounded-lg p-2">
             {/* Offer Icon */}
             {product.offer > 0 && (
               <div className="absolute -top-4 -left-4 w-20 h-20 flex items-center justify-center">

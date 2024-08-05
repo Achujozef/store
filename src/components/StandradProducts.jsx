@@ -27,6 +27,10 @@ const StandradProducts = () => {
 
   return (
     <div className="py-4 px-4">
+            <div className="flex justify-between items-center mb-4">
+        <h2 className="text-xl font-semibold">Standrad Products</h2>
+        <button className="text-blue-600 hover:underline">View All</button>
+      </div>
       <div className="overflow-x-auto whitespace-nowrap scrollbar-hidden">
         <div className="flex flex-col">
           {/* First Row */}
@@ -79,7 +83,7 @@ const StandradProducts = () => {
           {/* Second Row */}
           <div className="flex space-x-2">
             {secondRowProducts.map(product => (
-              <div key={product.id} className="relative flex flex-col items-center min-w-max mx-1 border rounded-lg p-2  overflow-hidden">
+              <div key={product.id} className="relative flex flex-col items-center min-w-max mx-1  rounded-lg p-2  overflow-hidden">
                 {/* Offer Icon */}
                 {product.offer > 0 && (
                   <div className="absolute -top-4 -left-4 w-20 h-20 flex items-center justify-center">
