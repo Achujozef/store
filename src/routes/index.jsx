@@ -7,7 +7,8 @@ const AppRoutes = () => (
   <Router>
     <Routes>
       <Route path="/" element={<HomePage />} />
-      <Route path="/cat" element={<CategoryProductPage />} />
+      <Route path="/category/:categoryId" element={<CategoryProductPage />} />
+
       {/* Add other routes as needed */}
     </Routes>
   </Router>
