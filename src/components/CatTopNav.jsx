@@ -27,6 +27,27 @@ const CatTopNav = () => {
       navigate('/'); // Default to the home page
     }
   };
+
+
+
+  const handleShareClick = () => {
+    if (navigator.share) {
+      navigator.share({
+        title: 'Check out this category!',
+        text: `Category: ${categoryName}`,
+        url: window.location.href, // Share the current URL
+      }).then(() => {
+        console.log('Thanks for sharing!');
+      }).catch((error) => {
+        console.error('Something went wrong sharing the content', error);
+      });
+    } else {
+      // Fallback for browsers that do not support Web Share API
+      console.log('Web Share API not supported.');
+    }
+  };
+
+
   return (
     <div className="relative">
       <div className="flex justify-between items-center p-4 bg-white shadow-md z-10">
@@ -40,7 +61,7 @@ const CatTopNav = () => {
           <button onClick={handleSearchClick} className="text-gray-600">
             <FaSearch />
           </button>
-          <button className="text-gray-600">
+        <button onClick={handleShareClick} className="text-gray-600">
             <FaShare />
           </button>
         </div>
