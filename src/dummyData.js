@@ -58,21 +58,21 @@ export const banners = [
 ];
   
 export const featuredProducts = [
-  { 
-      id: 1, 
-      name: 'Apple', 
-      brand: 'Brand A', 
-      quantity: '1 kg', 
-      mrp: '120', 
-      actualPrice: '100', 
-      image: '/images/fruits.jpg', 
-      offer: "10", 
-      variants: [
-          { size: 'Small', price: '90' },
-          { size: 'Medium', price: '100' },
-          { size: 'Large', price: '110' }
-      ]
-  },
+    { 
+        id: 1, 
+        name: 'Apple', 
+        brand: 'Brand A', 
+        quantity: '1 kg', 
+        mrp: '120', 
+        actualPrice: '100', 
+        image: '/images/fruits.jpg', 
+        offer: "10", 
+        variants: [
+            {id: '11v21',  size: 'Small', price: '90' , image: '/images/fruits.jpg'},
+            { id: 2, size: 'Medium', price: '100'  , image: '/images/fruits.jpg'},
+            { id: 3, size: 'Large', price: '110', image: '/images/fruits.jpg' }
+        ]
+    },
   { 
       id: 2, 
       name: 'Banana', 
@@ -83,7 +83,7 @@ export const featuredProducts = [
       image: '/images/veg.png', 
       offer: "30", 
       variants: [
-          { size: 'Single', price: '5' },
+          { id: 2, size: 'Single', price: '5' },
           { size: 'Bunch', price: '50' }
       ]
   },

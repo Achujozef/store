@@ -1,15 +1,14 @@
 import React, { useState, useMemo } from 'react';
 import { FaArrowLeft, FaSearch, FaShare } from 'react-icons/fa';
-import SearchBar from './SearchBar'; // Import the SearchBar component
-import { useNavigate, useLocation ,useParams } from 'react-router-dom'; 
-import { categories } from '../dummyData'; 
+import CatSearchbar from './CatSearchbar'; // Import the SearchBar component
+import { useNavigate, useLocation, useParams } from 'react-router-dom';
+import { categories } from '../dummyData';
 
 const CatTopNav = () => {
   const [isSearchVisible, setIsSearchVisible] = useState(false);
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
   const location = useLocation();
   const { categoryId } = useParams();
-
 
   const categoryName = useMemo(() => {
     const category = categories.find(cat => cat.id === parseInt(categoryId));
@@ -19,6 +18,7 @@ const CatTopNav = () => {
   const handleSearchClick = () => {
     setIsSearchVisible((prev) => !prev);
   };
+
   const handleBackClick = () => {
     // Navigate back in history if possible, otherwise go to the home page
     if (location.state?.from) {
@@ -27,8 +27,6 @@ const CatTopNav = () => {
       navigate('/'); // Default to the home page
     }
   };
-
-
 
   const handleShareClick = () => {
     if (navigator.share) {
@@ -47,28 +45,31 @@ const CatTopNav = () => {
     }
   };
 
+  const handleSearchClose = () => {
+    setIsSearchVisible(false);
+  };
 
   return (
     <div className="relative">
       <div className="flex justify-between items-center p-4 bg-white shadow-md z-10">
-        <div className="flex items-center space-x-2">
-          <button onClick={handleBackClick} className="text-gray-600">
-            <FaArrowLeft />
+        <div className="flex items-center space-x-6">
+          <button onClick={handleBackClick} className="text-gray-500">
+            <FaArrowLeft className="text-gray-500" />
           </button>
-          <span className="text-lg font-bold">{categoryName}</span>
+          <span className="text-lg font-medium text-gray-500">{categoryName}</span>
         </div>
-        <div className="flex items-center space-x-2">
-          <button onClick={handleSearchClick} className="text-gray-600">
-            <FaSearch />
+        <div className="flex items-center space-x-6">
+          <button onClick={handleSearchClick} className="text-gray-500">
+            <FaSearch className="text-gray-500" />
           </button>
-        <button onClick={handleShareClick} className="text-gray-600">
-            <FaShare />
+          <button onClick={handleShareClick} className="text-gray-500">
+            <FaShare className="text-gray-500" />
           </button>
         </div>
       </div>
       {isSearchVisible && (
         <div className="absolute top-0 left-0 right-0 z-20">
-          <SearchBar />
+          <CatSearchbar onClose={handleSearchClose} />
         </div>
       )}
     </div>
