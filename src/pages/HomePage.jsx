@@ -7,10 +7,11 @@ import Products from '../components/Products';
 import TrendingProducts from '../components/TrendingProducts';
 import ClasicProducts from '../components/ClasicProducts';
 import StandradProducts from '../components/StandradProducts';
-
+import SearchBar from '../components/SearchBar';
 const HomePage = () => (
     <div className="">
     <TopNav />
+    <SearchBar />
     <Navbar />
 
     <BannerCarousel />

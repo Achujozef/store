@@ -19,7 +19,7 @@ const BannerCarousel = () => {
   };
 
   return (
-    <div className="relative flex justify-center mt-6">
+    <div className="relative flex justify-center mt-2">
       <div className="relative w-11/12 h-36 overflow-hidden border-2 border-white bg-white rounded-2xl">
         <Slider {...settings}>
           {banners.map((banner) => (
