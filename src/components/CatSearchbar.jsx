@@ -74,8 +74,14 @@ const CatSearchbar = ({ onClose }) => {
       setIsRecording(false);
     } else {
       setError('');
-      recognitionRef.current.start();
-      setIsRecording(true);
+      try {
+        recognitionRef.current.start();
+        setIsRecording(true);
+      } catch (e) {
+        console.error('Speech recognition start error', e);
+        setError('Failed to start speech recognition. Please try again.');
+        setIsRecording(false);
+      }
     }
   };
 
