@@ -11,7 +11,21 @@
 //       image: 'https://via.placeholder.com/800x400?text=Banner+2',
 //       link: '/shop-now'
 //     }
-//   ];
+//   ];'/images/fruits.jpg'
+// dummyData.js
+export const popularBrands = [
+    { id: 1, name: 'Brand A', image: '/images/fruits.jpg' },
+    { id: 2, name: 'Brand B', image: '/images/fruits.jpg' },
+    { id: 3, name: 'Brand C', image: '/images/fruits.jpg' },
+    { id: 4, name: 'Brand D', image: '/images/fruits.jpg' },
+    { id: 5, name: 'Brand E', image: '/images/fruits.jpg' },
+    { id: 6, name: 'Brand F', image: '/images/fruits.jpg' },
+    { id: 7, name: 'Brand G', image: '/images/fruits.jpg' },
+    { id: 8, name: 'Brand H', image: '/images/fruits.jpg' },
+    // Add more brands as needed
+  ];
+  
+  
 export const subcategories = [
   { id: 1, name: 'Citrus', image: '/images/fruits.jpg' },
   { id: 2, name: 'Tropical', image: '/images/dairy.png' },

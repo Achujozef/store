@@ -8,6 +8,8 @@ import TrendingProducts from '../components/TrendingProducts';
 import ClasicProducts from '../components/ClasicProducts';
 import StandradProducts from '../components/StandradProducts';
 import SearchBar from '../components/SearchBar';
+import PopularBrands from '../components/PopularBrands';
+import FeedbackSection from '../components/FeedbackSection';
 const HomePage = () => (
     <div className="">
     <TopNav />
@@ -20,6 +22,8 @@ const HomePage = () => (
     <Products />
     <TrendingProducts/>
     <ClasicProducts/>
+    <PopularBrands />
+    <FeedbackSection/>
     <StandradProducts/>
     <ClasicProducts/>
   </div>
