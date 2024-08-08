@@ -295,7 +295,8 @@ export const userLocation = {
       offer: "20% OFF",
       offerDetail: "upto $50",
       profileImage: "supermarket1.jpg",
-      favorite: false,
+      favorite: true,
+      categories: ["Fish", "Vegitables", "Home made"]
     },
     {
       id: 2,
@@ -306,16 +307,18 @@ export const userLocation = {
       offerDetail: "upto $60",
       profileImage: "supermarket2.jpg",
       favorite: false,
+      categories: ["Fish", "Vegitables", "Home made"]
     },
     {
       id: 3,
       name: "Quality Mart",
       rating: 4.6,
       deliveryTime: "5 - 10 mins",
-      offer: "30% OFF",
+      offer: null,
       offerDetail: "upto $40",
       profileImage: "supermarket3.jpg",
       favorite: false,
+      categories: ["Fish", "Vegitables", "Home made"]
     },
     {
       id: 4,
@@ -326,6 +329,7 @@ export const userLocation = {
       offerDetail: "upto $30",
       profileImage: "supermarket4.jpg",
       favorite: false,
+      categories: ["Fish", "Vegitables", "Home made"]
     },
     {
       id: 5,
@@ -336,6 +340,7 @@ export const userLocation = {
       offerDetail: "upto $20",
       profileImage: "supermarket5.jpg",
       favorite: false,
+      categories: ["Fish", "Vegitables", "Home made"]
     },
     {
       id: 6,
@@ -346,6 +351,7 @@ export const userLocation = {
       offerDetail: "upto $25",
       profileImage: "supermarket6.jpg",
       favorite: false,
+      categories: ["Fish", "Vegitables", "Home made"]
     },
     {
       id: 7,
@@ -356,6 +362,7 @@ export const userLocation = {
       offerDetail: "upto $50",
       profileImage: "supermarket7.jpg",
       favorite: false,
+      categories: ["Fish", "Vegitables", "Home made"]
     },
     {
       id: 8,
@@ -366,6 +373,7 @@ export const userLocation = {
       offerDetail: "upto $60",
       profileImage: "supermarket8.jpg",
       favorite: false,
+      categories: ["Fish", "Vegitables", "Home made"]
     },
     {
       id: 9,
@@ -376,6 +384,7 @@ export const userLocation = {
       offerDetail: "upto $30",
       profileImage: "supermarket9.jpg",
       favorite: false,
+      categories: ["Fish", "Vegitables", "Home made"]
     },
     {
       id: 10,
@@ -386,6 +395,7 @@ export const userLocation = {
       offerDetail: "upto $20",
       profileImage: "supermarket10.jpg",
       favorite: false,
+      categories: ["Fish", "Vegitables", "Home made"]
     },
   ];
   
@@ -400,6 +410,7 @@ export const userLocation = {
       profileImage: "supermarket2.jpg",
       offer: "15% OFF",
       favorite: false,
+      categories: ["Fish", "Vegitables", "Home made"]
     },
     {
       id: 2,
@@ -411,6 +422,7 @@ export const userLocation = {
       profileImage: "supermarket3.jpg",
       offer: "10% OFF",
       favorite: false,
+      categories: ["Fish", "Vegitables", "Home made"]
     },
     {
       id: 3,
@@ -422,6 +434,7 @@ export const userLocation = {
       profileImage: "supermarket4.jpg",
       offer: "20% OFF",
       favorite: false,
+      categories: ["Fish", "Vegitables", "Home made"]
     },
     {
       id: 4,
@@ -433,6 +446,7 @@ export const userLocation = {
       profileImage: "supermarket5.jpg",
       offer: "5% OFF",
       favorite: false,
+      categories: ["Fish", "Vegitables", "Home made"]
     },
     {
       id: 5,
@@ -444,6 +458,7 @@ export const userLocation = {
       profileImage: "supermarket6.jpg",
       offer: "15% OFF",
       favorite: false,
+      categories: ["Fish", "Vegitables", "Home made"]
     },
     {
       id: 6,
@@ -455,6 +470,7 @@ export const userLocation = {
       profileImage: "supermarket7.jpg",
       offer: "10% OFF",
       favorite: false,
+      categories: ["Fish", "Vegitables", "Home made"]
     },
     {
       id: 7,
@@ -466,6 +482,7 @@ export const userLocation = {
       profileImage: "supermarket8.jpg",
       offer: "20% OFF",
       favorite: false,
+      categories: ["Fish", "Vegitables", "Home made"]
     },
     {
       id: 8,
@@ -477,6 +494,7 @@ export const userLocation = {
       profileImage: "supermarket9.jpg",
       offer: "5% OFF",
       favorite: false,
+      categories: ["Fish", "Vegitables", "Home made"]
     },
     {
       id: 9,
@@ -488,6 +506,7 @@ export const userLocation = {
       profileImage: "supermarket10.jpg",
       offer: "15% OFF",
       favorite: false,
+      categories: ["Fish", "Vegitables", "Home made"]
     },
     {
       id: 10,
@@ -499,6 +518,7 @@ export const userLocation = {
       profileImage: "supermarket1.jpg",
       offer: "10% OFF",
       favorite: false,
+      categories: ["Fish", "Vegitables", "Home made"]
     },
   ];
   
@@ -513,6 +533,7 @@ export const userLocation = {
       profileImage: "supermarket3.jpg",
       offer: "10% OFF",
       favorite: false,
+      categories: ["Fish", "Vegetables", "Home made"]
     },
     {
       id: 2,
@@ -524,6 +545,7 @@ export const userLocation = {
       profileImage: "supermarket4.jpg",
       offer: "5% OFF",
       favorite: false,
+      categories: ["Fish", "Vegitables", "Home made"]
     },
     {
       id: 3,
@@ -535,6 +557,7 @@ export const userLocation = {
       profileImage: "supermarket5.jpg",
       offer: "20% OFF",
       favorite: false,
+      categories: ["Fish", "Vegitables", "Home made"]
     },
     {
       id: 4,
@@ -546,5 +569,6 @@ export const userLocation = {
       profileImage: "supermarket6.jpg",
       offer: "15% OFF",
       favorite: false,
+      categories: ["Fish", "Vegitables", "Home made"]
     }
 ];

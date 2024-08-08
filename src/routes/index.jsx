@@ -4,6 +4,8 @@ import HomePage from '../pages/HomePage';
 import CategoryProductPage from '../pages/CategoryProductPage';
 import SupermarketPage from '../pages/SupermarketPage';
 import FeedbackForm from '../components/FeedbackForm'
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 const AppRoutes = () => (
   <Router>
     <Routes>
