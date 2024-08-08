@@ -90,7 +90,7 @@ const SearchBar = () => {
   };
 
   return (
-    <div className="sticky top-4 z-20 bg-white">
+    <div className="sticky top-4 z-20">
       <div className="flex justify-center mt-4 mb-4 relative">
         <div className="relative w-11/12 sm:w-8/12 md:w-6/12 lg:w-5/12">
           <input

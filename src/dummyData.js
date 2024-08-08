@@ -283,7 +283,7 @@ export const userLocation = {
   
   export const userProfile = {
     name: "John Doe",
-    image: null, // Add a URL to an image if available
+    image: 'profile.jpg', 
   };
   
   export const topRatedSupermarkets = [
@@ -316,7 +316,7 @@ export const userLocation = {
       deliveryTime: "5 - 10 mins",
       offer: null,
       offerDetail: "upto $40",
-      profileImage: "supermarket3.jpg",
+      profileImage: "supermarket3.jpeg",
       favorite: false,
       categories: ["Fish", "Vegitables", "Home made"]
     },
@@ -371,7 +371,7 @@ export const userLocation = {
       deliveryTime: "5 - 10 mins",
       offer: "25% OFF",
       offerDetail: "upto $60",
-      profileImage: "supermarket8.jpg",
+      profileImage: "supermarket8.jpeg",
       favorite: false,
       categories: ["Fish", "Vegitables", "Home made"]
     },
@@ -382,7 +382,7 @@ export const userLocation = {
       deliveryTime: "15 - 20 mins",
       offer: "10% OFF",
       offerDetail: "upto $30",
-      profileImage: "supermarket9.jpg",
+      profileImage: "supermarket9.jpeg",
       favorite: false,
       categories: ["Fish", "Vegitables", "Home made"]
     },
@@ -393,7 +393,7 @@ export const userLocation = {
       deliveryTime: "20 - 25 mins",
       offer: "5% OFF",
       offerDetail: "upto $20",
-      profileImage: "supermarket10.jpg",
+      profileImage: "supermarket10.jpeg",
       favorite: false,
       categories: ["Fish", "Vegitables", "Home made"]
     },
@@ -404,6 +404,7 @@ export const userLocation = {
       id: 1,
       name: "Supermarket One",
       rating: 4.2,
+      deliveryTime: "20 - 25 mins",
       totalOrders: 100,
       place: "New York",
       distance: "1.5 km",
@@ -416,10 +417,11 @@ export const userLocation = {
       id: 2,
       name: "Supermarket Two",
       rating: 4.1,
+      deliveryTime: "20 - 25 mins",
       totalOrders: 150,
       place: "Los Angeles",
       distance: "2.0 km",
-      profileImage: "supermarket3.jpg",
+      profileImage: "supermarket3.jpeg",
       offer: "10% OFF",
       favorite: false,
       categories: ["Fish", "Vegitables", "Home made"]
@@ -428,6 +430,7 @@ export const userLocation = {
       id: 3,
       name: "Supermarket Three",
       rating: 4.3,
+      deliveryTime: "20 - 25 mins",
       totalOrders: 200,
       place: "Chicago",
       distance: "1.0 km",
@@ -440,6 +443,7 @@ export const userLocation = {
       id: 4,
       name: "Supermarket Four",
       rating: 4.0,
+      deliveryTime: "20 - 25 mins",
       totalOrders: 250,
       place: "Houston",
       distance: "3.0 km",
@@ -452,6 +456,7 @@ export const userLocation = {
       id: 5,
       name: "Supermarket Five",
       rating: 4.2,
+      deliveryTime: "20 - 25 mins",
       totalOrders: 300,
       place: "Phoenix",
       distance: "1.8 km",
@@ -464,6 +469,7 @@ export const userLocation = {
       id: 6,
       name: "Supermarket Six",
       rating: 4.1,
+      deliveryTime: "20 - 25 mins",
       totalOrders: 180,
       place: "Philadelphia",
       distance: "2.5 km",
@@ -476,10 +482,11 @@ export const userLocation = {
       id: 7,
       name: "Supermarket Seven",
       rating: 4.4,
+      deliveryTime: "20 - 25 mins",
       totalOrders: 220,
       place: "San Antonio",
       distance: "1.3 km",
-      profileImage: "supermarket8.jpg",
+      profileImage: "supermarket8.jpeg",
       offer: "20% OFF",
       favorite: false,
       categories: ["Fish", "Vegitables", "Home made"]
@@ -488,10 +495,11 @@ export const userLocation = {
       id: 8,
       name: "Supermarket Eight",
       rating: 4.3,
+      deliveryTime: "20 - 25 mins",
       totalOrders: 170,
       place: "San Diego",
       distance: "1.7 km",
-      profileImage: "supermarket9.jpg",
+      profileImage: "supermarket9.jpeg",
       offer: "5% OFF",
       favorite: false,
       categories: ["Fish", "Vegitables", "Home made"]
@@ -500,10 +508,11 @@ export const userLocation = {
       id: 9,
       name: "Supermarket Nine",
       rating: 4.5,
+      deliveryTime: "20 - 25 mins",
       totalOrders: 230,
       place: "Dallas",
       distance: "2.2 km",
-      profileImage: "supermarket10.jpg",
+      profileImage: "supermarket10.jpeg",
       offer: "15% OFF",
       favorite: false,
       categories: ["Fish", "Vegitables", "Home made"]
@@ -512,6 +521,7 @@ export const userLocation = {
       id: 10,
       name: "Supermarket Ten",
       rating: 4.6,
+      deliveryTime: "20 - 25 mins",
       totalOrders: 280,
       place: "San Jose",
       distance: "1.6 km",
@@ -524,51 +534,42 @@ export const userLocation = {
   
   export const closedSupermarkets = [
     {
-      id: 1,
-      name: "Closed Supermarket",
-      rating: 4.0,
-      totalOrders: 50,
-      place: "New York",
-      distance: "2.0 km",
-      profileImage: "supermarket3.jpg",
-      offer: "10% OFF",
-      favorite: false,
-      categories: ["Fish", "Vegetables", "Home made"]
-    },
-    {
-      id: 2,
-      name: "Shut Down Store",
-      rating: 3.8,
-      totalOrders: 70,
-      place: "Los Angeles",
-      distance: "2.5 km",
-      profileImage: "supermarket4.jpg",
-      offer: "5% OFF",
-      favorite: false,
-      categories: ["Fish", "Vegitables", "Home made"]
-    },
-    {
-      id: 3,
-      name: "No Longer Open Mart",
-      rating: 4.1,
-      totalOrders: 80,
-      place: "Chicago",
-      distance: "1.8 km",
-      profileImage: "supermarket5.jpg",
-      offer: "20% OFF",
-      favorite: false,
-      categories: ["Fish", "Vegitables", "Home made"]
-    },
-    {
-      id: 4,
-      name: "Closed Shop",
-      rating: 3.9,
-      totalOrders: 60,
-      place: "Houston",
-      distance: "3.0 km",
-      profileImage: "supermarket6.jpg",
-      offer: "15% OFF",
-      favorite: false,
-      categories: ["Fish", "Vegitables", "Home made"]
-    }
+        id: 1,
+        name: "Supermarket One",
+        rating: 4.2,
+        deliveryTime: "20 - 25 mins",
+        totalOrders: 100,
+        place: "New York",
+        distance: "1.5 km",
+        profileImage: "supermarket2.jpg",
+        offer: "15% OFF",
+        favorite: false,
+        categories: ["Fish", "Vegitables", "Home made"]
+      },
+      {
+        id: 2,
+        name: "Supermarket Two",
+        rating: 4.1,
+        deliveryTime: "20 - 25 mins",
+        totalOrders: 150,
+        place: "Los Angeles",
+        distance: "2.0 km",
+        profileImage: "supermarket3.jpeg",
+        offer: "10% OFF",
+        favorite: false,
+        categories: ["Fish", "Vegitables", "Home made"]
+      },
+      {
+        id: 3,
+        name: "Supermarket Three",
+        rating: 4.3,
+        deliveryTime: "20 - 25 mins",
+        totalOrders: 200,
+        place: "Chicago",
+        distance: "1.0 km",
+        profileImage: "supermarket4.jpg",
+        offer: "20% OFF",
+        favorite: false,
+        categories: ["Fish", "Vegitables", "Home made"]
+      },
 ];

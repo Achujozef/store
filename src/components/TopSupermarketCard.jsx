@@ -26,7 +26,7 @@ const TopSupermarketCard = ({ supermarket }) => {
           className="w-32 h-32 object-cover rounded-lg" 
         />
         {supermarket.offer && (
-          <div className="absolute bottom-0 left-0 w-32 h-1/4 bg-gradient-to-t from-green-800 to-transparent rounded-b-lg"></div>
+          <div className="absolute bottom-0 left-0 w-32 h-2/4 bg-gradient-to-t from-gray-800 to-transparent rounded-b-lg"></div>
         )}
         <div 
           className="absolute top-0 right-2 p-1 cursor-pointer"
