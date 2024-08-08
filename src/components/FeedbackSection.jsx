@@ -42,7 +42,7 @@ const FeedbackSection = () => {
         Tell Us
       </button>
     </div>
-    <div className="bg-white p-2 rounded-ful shadow-lg flex items-center justify-center">
+    <div className="bg-white p-2  shadow-lg flex items-center justify-center">
       <video 
         src="/feedback.mp4" 
         autoPlay 
